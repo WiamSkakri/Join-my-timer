@@ -1,0 +1,93 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff; /* White background */
+    font-family: Arial, sans-serif;
+    color: #000000; /* Black text */
+}
+
+/* Center the main container */
+#main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Title styling */
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Timer display styling */
+#timerDisplay {
+    font-size: 5rem; /* Large font for timer */
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace; /* Coding style font */
+    margin: 20px 0;
+    color: #000000;
+}
+
+/* Controls layout */
+#controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+#controls input,
+#controls button {
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    outline: none;
+    transition: background-color 0.3s;
+    flex: 1 1 auto; /* Allow inputs and buttons to expand responsively */
+}
+
+/* Button styling */
+#controls button,
+#actions button {
+    cursor: pointer;
+    background-color: #000000; /* Black button background */
+    color: #ffffff; /* White text */
+}
+
+#controls button:hover,
+#actions button:hover {
+    background-color: #333333; /* Darker black on hover */
+}
+
+#actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px;
+}
+
+#actions button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
